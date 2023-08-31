@@ -1,5 +1,5 @@
 # PortfolioWebsite
-Website for the portfolio of coding projects
+[Portfolio of Coding Projects](https://arcane34.github.io/PortfolioWebsite/)
 
 ## Main Idea
 The main idea of this project is to have a star system that represents each and every coding project I've worked on so far, having it be interactive with the user
