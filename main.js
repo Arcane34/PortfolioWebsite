@@ -14,6 +14,9 @@ const renderer = new THREE.WebGLRenderer({
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
+const cameraOffset = new THREE.Vector3(0.0, 10.0, -10.0); // NOTE Constant offset between the camera and the target
+
+
 
 renderer.setPixelRatio( window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight);
@@ -61,6 +64,8 @@ function animate() {
   planet.position.z = 10*Math.sin(time/180*Math.PI);
   planet1.position.x = 25*Math.cos((time/4)/180*Math.PI);
   planet1.position.z = 30*Math.sin((time/4)/180*Math.PI);
+  //camera.position.copy(planet1.position).add(cameraOffset);
+  //camera.lookAt(planet1.position)
 }
   
 animate()
